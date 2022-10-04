@@ -16,7 +16,11 @@ $(document).ready(function () {
                 email: email,
             },
             success: function (response) {
-                swal("Here's the title!", "...and here's the text!");
+                swal({
+                    title: "Good job!",
+                    text: "Send Success!",
+                    icon: "success",
+                  });
             }
         });
 
